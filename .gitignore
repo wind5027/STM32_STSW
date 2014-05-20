@@ -1,6 +1,11 @@
 #以'#'开始的行，被视为注释.                                                                                         
-                             
+
+                            
 *.*
+
+/emWin524SIM/Exe
+/emWin524SIM/Output
+
 !.gitignore
 !*.s
 !*.asm
@@ -9,9 +14,18 @@
 !*.h
 
 #VC文件
+!*.dsp
+!*.cbp
+!*.dsw
 !*.sln
 !*.vcxproj
+!*.a
+!*.lib
+!*.bat
+!*.vcxproj.filters
+!*.exe
 
+!*.res
 !*.bmp
 !*.rc
 !*.rc2

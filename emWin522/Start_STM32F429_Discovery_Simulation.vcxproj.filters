@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{cb568a87-794a-4ebb-a635-f1005868f6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SEGGERDEMO">
+      <UniqueIdentifier>{f422e500-cca4-43b0-8914-22722927d5b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SEGGERDEMO\Src">
+      <UniqueIdentifier>{d59bd75c-5169-4c13-9c1d-1dbbed629513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{72a69435-37ee-44f6-9823-5f77ed525a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\GUI">
+      <UniqueIdentifier>{cc6cbb76-1197-43dc-ac23-86c655487461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setup">
+      <UniqueIdentifier>{bf21922e-92a2-4bc7-97d6-0054b9d7d1b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_AntialiasedText.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Automotive.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_BarGraph.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Bitmap.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_ColorBar.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Cursor.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Fading.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Graph.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_IconView.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_ImageFlow.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Intro.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Listview.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_RadialMenu.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Resource.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Skinning.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Speed.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Speedometer.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_TransparentDialog.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Treeview.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_VScreen.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_WashingMachine.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_ZoomAndRotate.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\IMAGE_SeggerLogo_300x150_565c.c">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\SEGGERDEMO.c">
+      <Filter>Application\SEGGERDEMO</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\GUI\SIM_X.c">
+      <Filter>Windows\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Setup\GUIConf.c">
+      <Filter>Setup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\SEGGERDEMO\Src\GUIDEMO.h">
+      <Filter>Application\SEGGERDEMO\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\SEGGERDEMO\SysConfDefaults.h">
+      <Filter>Application\SEGGERDEMO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Windows\GUI\GUISIMx86.res">
+      <Filter>Windows\GUI</Filter>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Windows\GUI\GUISIMx86.lib">
+      <Filter>Windows\GUI</Filter>
+    </Library>
+    <Library Include="Windows\GUI\GUIv5x86_trial.lib">
+      <Filter>Windows\GUI</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
