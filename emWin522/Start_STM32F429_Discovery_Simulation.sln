@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Start_STM32F429_Discovery", "Start_STM32F429_Discovery_Simulation.vcxproj", "{78731C3C-48E0-4F0F-84EA-21C6A1AE1895}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78731C3C-48E0-4F0F-84EA-21C6A1AE1895}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78731C3C-48E0-4F0F-84EA-21C6A1AE1895}.Debug|Win32.Build.0 = Debug|Win32
+		{78731C3C-48E0-4F0F-84EA-21C6A1AE1895}.Release|Win32.ActiveCfg = Release|Win32
+		{78731C3C-48E0-4F0F-84EA-21C6A1AE1895}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Start_STM32F429_Discovery</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{78731C3C-48E0-4F0F-84EA-21C6A1AE1895}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>Setup;FS;GUI;USBH;Inc;Config;Windows\GUI;Application\SEGGERDEMO;Application\SEGGERDEMO\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;TARGET_1375_C8_137X;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Start_STM32F429_Discovery_Simulation.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>Output/STM32F429_Discovery/emWinSimulation_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>Output/STM32F429_Discovery/emWinSimulation_Debug/</ProgramDataBaseFileName>
+      <AdditionalOptions> "FS"</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Start_STM32F429_Discovery_Simulation.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <ResourceOutputFileName>Output/STM32F429_Discovery/emWinSimulation_Debug/STM32F429_Discovery_Simulation.res</ResourceOutputFileName>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Output/STM32F429_Discovery/emWinSIM_Debug/Start_STM32F429_Discovery_Simulation.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>Windows/GUI/Start_STM32F429_Discovery_Simulation_DEBUG.exe</OutputFile>
+      <AdditionalDependencies>winmm.lib;libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>Setup;FS;GUI;USBH;Inc;Config;Windows\GUI;Application\SEGGERDEMO;Application\SEGGERDEMO\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;TARGET_1375_C8_137X;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Start_STM32F429_Discovery_Simulation.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>Output/STM32F429_Discovery/emWinSimulation_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>Output/STM32F429_Discovery/emWinSimulation_Release/</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Start_STM32F429_Discovery_Simulation.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0407</Culture>
+      <ResourceOutputFileName>Output/STM32F429_Discovery/emWinSimulation_Release/STM32F429_Discovery_Simulation.res</ResourceOutputFileName>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Output/STM32F429_Discovery/emWinSimulator_Release/Start_STM32F429_Discovery_Simulation.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>Windows/GUI/Start_STM32F429_Discovery_Simulation.exe</OutputFile>
+      <AdditionalDependencies>winmm.lib;libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_AntialiasedText.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Automotive.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_BarGraph.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Bitmap.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_ColorBar.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Cursor.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Fading.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Graph.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_IconView.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_ImageFlow.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Intro.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Listview.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_RadialMenu.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Resource.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Skinning.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Speed.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Speedometer.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_TransparentDialog.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_Treeview.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_VScreen.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_WashingMachine.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\GUIDEMO_ZoomAndRotate.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\Src\IMAGE_SeggerLogo_300x150_565c.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Application\SEGGERDEMO\SEGGERDEMO.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Windows\GUI\SIM_X.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Setup\GUIConf.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> "FS"  "FS"</AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\SEGGERDEMO\Src\GUIDEMO.h" />
+    <ClInclude Include="Application\SEGGERDEMO\SysConfDefaults.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Windows\GUI\GUISIMx86.res" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Windows\GUI\GUISIMx86.lib" />
+    <Library Include="Windows\GUI\GUIv5x86_trial.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
