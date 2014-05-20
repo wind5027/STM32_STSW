@@ -22,6 +22,12 @@
 
 !*.txt
 
+#IAR文件
+!*.dep
+!*.ewd
+!*.ewp
+!*.eww
+
 
 #Keil文件
 !*.uvproj
