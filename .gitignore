@@ -23,7 +23,7 @@
 !*.lib
 !*.bat
 !*.vcxproj.filters
-!*.exe
+
 
 !*.res
 !*.bmp
